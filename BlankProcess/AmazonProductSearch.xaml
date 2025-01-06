@@ -108,13 +108,13 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AmazonProductSearch" sap:VirtualizedContainerService.HintSize="714,2461" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AmazonProductSearch" sap:VirtualizedContainerService.HintSize="698,2578" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Opens browser and specified URL" sap:VirtualizedContainerService.HintSize="486,2438" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8e300525-6f75-49b2-82ed-192ed6954380">
+    <uix:NApplicationCard DisplayName="Opens browser and specified URL" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,2447" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8e300525-6f75-49b2-82ed-192ed6954380">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -126,7 +126,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type the keyword in search bar" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" Text="[in_SearchKeyword]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type the keyword in search bar" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" Text="[in_SearchKeyword]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="amazon.in" CVScreenId="b22189f2-4563-46e6-a44c-18862500bc6a" ContentHash="NhicFSEXkUeWLUYbC1Hv-A" DesignTimeRectangle="323, 141, 199, 35" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='searchDropdownBox' tag='SELECT' /&gt;" Guid="4df15b60-abec-42f4-b45b-2ded337554b9" InformativeScreenshot="96ce53e16b73d2309763a696633a1fda.png" Reference="rwKH8d4UVEay-Uod9EH-Lg/7wnGCyHMnUqGqzKru6AZHg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -147,7 +147,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click search icon" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click search icon" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="amazon.in" ContentHash="olNHM5wAAkGyn6Y9vEuTug" DesignTimeRectangle="912, 137, 45, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' /&gt;" Guid="b666debe-b6e9-4f13-9e2f-4cb8fe63f0dc" InformativeScreenshot="9e2c2205cab19a803c31e1f84234e28d.png" Reference="rwKH8d4UVEay-Uod9EH-Lg/CEOnOImcQUu9OKKjSDOcyg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -170,17 +170,17 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NGetText DisplayName="Extract Product name" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" TextString="[out_ProductName]" Version="V4">
+                  <uix:NGetText DisplayName="Extract Product name" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" TextString="[out_ProductName]" Version="V4">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="amazon.in/s" ContentHash="r9PL4XIaUEqMXtMATaqk-Q" DesignTimeRectangle="630, 304, 575, 70" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&amp;quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG' tag='SPAN' /&gt;" Guid="9b0372a6-c694-4b19-890d-d3e0fc7b8675" ImageBase64="" InformativeScreenshot="cb8014acf686c6123af714b77abf7c40.png" Reference="rwKH8d4UVEay-Uod9EH-Lg/Le3__6yMBk6BC9GtVJGLtg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon.in : laptop' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <uix:NGetText DisplayName="Extract product price" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" TextString="[out_ProductPrice]" Version="V4">
+                  <uix:NGetText DisplayName="Extract product price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" TextString="[out_ProductPrice]" Version="V4">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="amazon.in/s" CVScreenId="b88d8abe-fdaf-4fc1-9691-ac81937c4136" ContentHash="T-DtTs05NUKCm9HFuQ7xIg" CvTextArea="630, 404, 262, 27" CvType="AnyWordGroup" DesignTimeRectangle="630, 399, 292, 35" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='a-row' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="3eeb4f55-c660-4d12-8506-b39ca695f723" ImageBase64="" InformativeScreenshot="77f09bd706bb8b69926dac68adeef2e7.png" Reference="rwKH8d4UVEay-Uod9EH-Lg/yzZ-sW64X06PqFYd-Tcr2w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon.in : laptop' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <uix:NGetText DisplayName="Get Text '3.93.9 out of 5 stars (…'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" TextString="[out_ProductRating]" Version="V4">
+                  <uix:NGetText DisplayName="Get Text '3.93.9 out of 5 stars (…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="8e300525-6f75-49b2-82ed-192ed6954380" TextString="[out_ProductRating]" Version="V4">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="amazon.in/s" CVScreenId="b88d8abe-fdaf-4fc1-9691-ac81937c4136" ContentHash="Qoohgn57NEa3VROFDyrE6w" CvTextArea="629, 357, 152, 16" CvType="AnyWordGroup" DesignTimeRectangle="630, 355, 588, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='  ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="81d49d20-063d-4add-8164-61e2be792758" ImageBase64="" InformativeScreenshot="59be203592f59631e98a0e1652467865.png" Reference="rwKH8d4UVEay-Uod9EH-Lg/ZpcGH-e3k0asLBRCXPY9IA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon.in : laptop' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                     </uix:NGetText.Target>
@@ -221,8 +221,9 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="Ge-wA5SIbkuNLSwcPQFxZQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="740ed8d56d08dccc3d308b811554d6a2.jpg" Reference="rwKH8d4UVEay-Uod9EH-Lg/X0WLZ7y3X0GVxwQgS3B4-A" Selector="&lt;html app='msedge.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" Title="Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in" Url="https://www.amazon.in/" Version="V1" />
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="Ge-wA5SIbkuNLSwcPQFxZQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="740ed8d56d08dccc3d308b811554d6a2.jpg" Reference="rwKH8d4UVEay-Uod9EH-Lg/X0WLZ7y3X0GVxwQgS3B4-A" Selector="&lt;html app='msedge.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" Url="https://www.amazon.in/" Version="V1" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="486,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;adding message box and pushing to git&quot;]" />
   </Sequence>
 </Activity>
